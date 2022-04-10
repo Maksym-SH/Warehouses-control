@@ -1,0 +1,318 @@
+{
+  "historyPayment": [
+    {
+      "id": 1,
+      "product": "Обои",
+      "price": 200,
+      "user": "Глеб Иванов",
+      "dataSend": "11.04.2022",
+      "citySend": "Харьков"
+    },
+    {
+      "id": 2,
+      "product": "Шкаф",
+      "price": 7500,
+      "user": "Андрей Лобанов",
+      "dataSend": "20.04.2022",
+      "citySend": "Николаев"
+    },
+    {
+      "id": 3,
+      "product": "Шпатлевка",
+      "price": 350,
+      "user": "Екатерина Клюева",
+      "dataSend": "15.04.2022",
+      "citySend": "Киев"
+    },
+    {
+      "id": 4,
+      "product": "Дверь",
+      "price": 600,
+      "user": "Дарья Наумова",
+      "dataSend": "28.03.2022",
+      "citySend": "Запорожье"
+    },
+    {
+      "id": 5,
+      "product": "Тумба",
+      "price": 750,
+      "user": "Глеб Иванов",
+      "dataSend": "16.03.2022",
+      "citySend": "Кривой Рог"
+    },
+    {
+      "id": 6,
+      "product": "Холодильник",
+      "price": 8000,
+      "user": "Иван Картинзо",
+      "dataSend": "15.04.2022",
+      "citySend": "Запорожье"
+    },
+    {
+      "id": 7,
+      "product": "Люстра",
+      "price": 350,
+      "user": "Михаил Сухарев",
+      "dataSend": "05.04.2022",
+      "citySend": "Донецк"
+    }
+  ],
+  "receipts": [
+    {
+      "id": 1,
+      "product": "Обои",
+      "user": "Глеб Иванов",
+      "dataSend": "11.04.2022",
+      "citySend": "Харьков"
+    },
+    {
+      "id": 2,
+      "product": "Шкаф",
+      "user": "Андрей Лобанов",
+      "dataSend": "20.04.2022",
+      "citySend": "Николаев"
+    },
+    {
+      "id": 3,
+      "product": "Шпатлевка",
+      "user": "Екатерина Клюева",
+      "dataSend": "15.04.2022",
+      "citySend": "Киев"
+    },
+    {
+      "id": 4,
+      "product": "Дверь",
+      "user": "Дарья Наумова",
+      "dataSend": "28.03.2022",
+      "citySend": "Запорожье"
+    },
+    {
+      "id": 5,
+      "product": "Тумба",
+      "user": "Глеб Иванов",
+      "dataSend": "16.03.2022",
+      "citySend": "Кривой Рог"
+    },
+    {
+      "id": 6,
+      "product": "Холодильник",
+      "user": "Иван Картинзо",
+      "dataSend": "15.04.2022",
+      "citySend": "Запорожье"
+    },
+    {
+      "id": 7,
+      "product": "Люстра",
+      "user": "Михаил Сухарев",
+      "dataSend": "05.04.2022",
+      "citySend": "Донецк"
+    }
+  ],
+  "warehouseItems": [
+    {
+      "id": 1,
+      "name": "Империя",
+      "composition": [
+        {
+          "name": "Люстра",
+          "price": 350,
+          "dateGet": "05.04.2022",
+          "cityGet": "Харьков",
+          "count": "12"
+        },
+        {
+          "name": "Обои",
+          "price": 500,
+          "dateGet": "04.04.2022",
+          "cityGet": "Днепр",
+          "count": "124"
+        },
+        {
+          "name": "Шкаф",
+          "price": 7500,
+          "dateGet": "25.03.2022",
+          "cityGet": "Кривой Рог",
+          "count": "100"
+        },
+        {
+          "name": "Шпатлевка",
+          "price": 350,
+          "dateGet": "17.02.2022",
+          "cityGet": "Львов",
+          "count": "200"
+        },
+        {
+          "name": "Паркет",
+          "price": 600,
+          "dateGet": "18.03.2022",
+          "cityGet": "Киев",
+          "count": "200"
+        },
+        {
+          "name": "Дверь",
+          "price": 600,
+          "dateGet": "17.03.2022",
+          "cityGet": "Николаев",
+          "count": "24"
+        },
+        {
+          "name": "Холодильник",
+          "price": 8000,
+          "dateGet": "28.03.2022",
+          "cityGet": "Херсон",
+          "count": "12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Властелин",
+      "composition": [
+        {
+          "name": "Кровать",
+          "price": 4500,
+          "dateGet": "30.03.2022",
+          "cityGet": "Харьков",
+          "count": "250"
+        },
+        {
+          "name": "Порог",
+          "price": 1000,
+          "dateGet": "29.03.2022",
+          "cityGet": "Кривой Рог",
+          "count": "300"
+        },
+        {
+          "name": "Обои",
+          "price": 200,
+          "dateGet": "07.03.2022",
+          "cityGet": "Николаев",
+          "count": "350"
+        },
+        {
+          "name": "Окно",
+          "price": 2300,
+          "dateGet": "22.03.2022",
+          "cityGet": "Херсон",
+          "count": "123"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Карбон",
+      "composition": [
+        {
+          "name": "Телевизор",
+          "price": 5000,
+          "dateGet": "27.03.2022",
+          "cityGet": "Кривой Рог",
+          "count": "24"
+        },
+        {
+          "name": "Кафель",
+          "price": 1500,
+          "dateGet": "14.03.2022",
+          "cityGet": "Херсон",
+          "count": "1450"
+        },
+        {
+          "name": "Двери",
+          "price": 4000,
+          "dateGet": "07.03.2022",
+          "cityGet": "Запорожье",
+          "count": "20"
+        },
+        {
+          "name": "Тумба",
+          "price": 750,
+          "dateGet": "15.03.2022",
+          "cityGet": "Львов",
+          "count": "42"
+        },
+        {
+          "name": "Обогреватель",
+          "price": 2300,
+          "dateGet": "28.03.2022",
+          "cityGet": "Харьков",
+          "count": "120"
+        },
+        {
+          "name": "Стол",
+          "price": 200,
+          "dateGet": "14.03.2022",
+          "cityGet": "Кривой Рог",
+          "count": "144"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Михаил",
+      "secondName": "Сухарев",
+      "lastName": "Андреевич"
+    },
+    {
+      "id": 2,
+      "firstName": "Глеб",
+      "secondName": "Иванов",
+      "lastName": "Артурович"
+    },
+    {
+      "id": 3,
+      "firstName": "Вероника",
+      "secondName": "Овсянникова",
+      "lastName": "Никитична"
+    },
+    {
+      "id": 4,
+      "firstName": "Анна",
+      "secondName": "Клюева",
+      "lastName": "Савельевна"
+    },
+    {
+      "id": 5,
+      "firstName": "Екатерина",
+      "secondName": "Клюева",
+      "lastName": "Данииловна"
+    },
+    {
+      "id": 6,
+      "firstName": "Дарья",
+      "secondName": "Наумова",
+      "lastName": "Тимуровна"
+    },
+    {
+      "id": 7,
+      "firstName": "Данила",
+      "secondName": "Голубев",
+      "lastName": "Егорович"
+    },
+    {
+      "id": 8,
+      "firstName": "Ника",
+      "secondName": "Семенова",
+      "lastName": "Ильинична"
+    },
+    {
+      "id": 9,
+      "firstName": "Андрей",
+      "secondName": "Лобанов",
+      "lastName": "Егорович"
+    },
+    {
+      "id": 10,
+      "firstName": "Александр",
+      "secondName": "Кузнецов",
+      "lastName": "Тимофеевич"
+    },
+    {
+      "id": 11,
+      "firstName": "Иван",
+      "secondName": "Картинзо",
+      "lastName": "Андреевич"
+    }
+  ]
+}
