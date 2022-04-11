@@ -31,37 +31,39 @@
         >
           <div class="mb-3">
             <label for="name" class="popap-label">Имя склада</label>
-            <input type="text" v-model="nameWarehouse" class="popap-input" />
+            <input type="text" name="name" v-model="nameWarehouse" class="popap-input" />
           </div>
           <div class="pb-4">
             <label for="inside" class="popap-label">Содержание склада</label>
-            <input type="text" v-model="addDesc" class="popap-input" />
+            <input type="text" name="inside" v-model="addDesc" class="popap-input" />
             <div class="mt-3">
-              <label for="price" class="popap-label">Цена содержания</label>
+              <label for="price"  class="popap-label">Цена содержания</label>
               <input
                 type="number"
                 v-model.number="addPrice"
                 class="popap-input"
+                name="inside"
               />
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-label">
+              <label for="city-send" class="popap-label">
                 Поступление из города
               </label>
               <b-form-select
-                name="city"
+                name="city-send"
                 class="popap-input"
                 v-model="cityGet"
                 :options="cities"
               ></b-form-select>
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-input">Дата поступления</label>
-              <input type="date" class="popap-input" v-model="dataInsideGet" />
+              <label for="date-get" class="popap-input">Дата поступления</label>
+              <input type="date" name="date-get" class="popap-input" v-model="dataInsideGet" />
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-input">Количество товара</label>
+              <label for="product-count" class="popap-input">Количество товара</label>
               <input
+                name="product-count"
                 type="number"
                 class="popap-input"
                 v-model="dataInsideCount"
@@ -126,14 +128,14 @@
     <b-modal id="edit-warehouse" title="Редактор склада" :ok-disabled="editDisabled" hide-header-close @ok="changeWarehouse">
       <div class="mb-3">
         <label for="name" class="popap-label">Новое имя склада</label>
-        <input type="text" v-model="nameWarehouse" />
+        <input type="text" name="name" v-model="nameWarehouse" />
       </div>
       <div class="pb-4">
         <label for="inside" class="popap-label">Содержание склада</label>
-        <input type="text" v-model="addDesc" />
+        <input type="text" name="inside" v-model="addDesc" />
         <div class="mt-3">
           <label for="price" class="popap-label">Цена содержания</label>
-          <input type="number" v-model.number="addPrice" />
+          <input type="number" name="price" v-model.number="addPrice" />
         </div>
         <div class="mt-3">
           <label for="city" class="popap-label">Поступление из города</label>
@@ -145,12 +147,12 @@
           ></b-form-select>
         </div>
         <div class="mt-3">
-          <label for="city" class="popap-input">Дата поступления</label>
-          <input type="date" class="popap-input" v-model="dataInsideGet" />
+          <label for="date-get" class="popap-input">Дата поступления</label>
+          <input type="date" name="date-get" class="popap-input" v-model="dataInsideGet" />
         </div>
         <div class="mt-3">
-          <label for="city" class="popap-input">Количество товара</label>
-          <input type="number" class="popap-input" v-model="dataInsideCount" />
+          <label for="product-count" class="popap-input">Количество товара</label>
+          <input type="number" name="product-count" class="popap-input" v-model="dataInsideCount" />
         </div>
         <b-button
           variant="success"
@@ -179,34 +181,36 @@
     <b-modal id="edit-product" ref="edit" title="Редактирование товара" hide-header-close @ok="changeProduct" :ok-disabled="editProductDisabled">
           <div class="pb-4">
             <label for="inside" class="popap-label">Содержание склада</label>
-            <input type="text" v-model="editProduct.name" class="popap-input" />
+            <input type="text" name="inside" v-model="editProduct.name" class="popap-input" />
             </div>
             <div>
               <label for="price" class="popap-label">Цена содержания</label>
               <input
+                name="price"
                 type="number"
                 v-model.number="editProduct.price"
                 class="popap-input"
               />
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-label">
+              <label for="city-get" class="popap-label">
                 Поступление из города
               </label>
               <b-form-select
-                name="city"
+                name="city-get"
                 class="popap-input"
                 v-model="editProduct.cityGet"
                 :options="cities"
               ></b-form-select>
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-input">Дата поступления</label>
-              <input type="date" class="popap-input" v-model="editProduct.dateGet" />
+              <label for="date-get" class="popap-input">Дата поступления</label>
+              <input type="date" name="date-get" class="popap-input" v-model="editProduct.dateGet" />
             </div>
             <div class="mt-3">
-              <label for="city" class="popap-input">Количество товара</label>
+              <label for="count" class="popap-input">Количество товара</label>
               <input
+                name="count"
                 type="number"
                 class="popap-input"
                 v-model="editProduct.count"

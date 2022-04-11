@@ -37,10 +37,10 @@
       hide-header-close
     >
       <div class="pt-2">
-        <label for="userId" class="popap-label">
+        <label for="user-id" class="popap-label">
           Идентификатор пользователя
         </label>
-        <input type="number" v-model.number="userId" class="popap-input" />
+        <input type="number" name="user-id" v-model.number="userId" class="popap-input" />
       </div>
     </b-modal>
     <b-modal
@@ -51,16 +51,16 @@
       hide-header-close
     >
       <div class="pt-2">
-        <label for="userId" class="popap-label">Имя пользователя</label>
-        <input type="text" v-model="userFirstName" class="popap-input" />
+        <label for="user-name" class="popap-label">Имя пользователя</label>
+        <input type="text" name="user-name" v-model="userFirstName" class="popap-input" />
       </div>
       <div class="pt-2">
-        <label for="userId" class="popap-label">Фамилия пользователя</label>
-        <input type="text" v-model="userSecondName" class="popap-input" />
+        <label for="user-second-name" class="popap-label">Фамилия пользователя</label>
+        <input type="text" name="user-second-name" v-model="userSecondName" class="popap-input" />
       </div>
       <div class="pt-2">
-        <label for="userId" class="popap-label">Отчество пользователя</label>
-        <input type="text" v-model="userLastName" class="popap-input" />
+        <label for="user-last-name" class="popap-label">Отчество пользователя</label>
+        <input type="text" name="user-last-name" v-model="userLastName" class="popap-input" />
       </div>
     </b-modal>
   </div>
@@ -171,7 +171,6 @@ export default {
     position: absolute;
     top: 100%;
     left: 48%;
-    transform: translate(-50% -50%);
   }
   &__empty{
     margin-top: 40px !important;

@@ -20,7 +20,7 @@
     <b-modal id="print" title="Распечатать квитанцию" :ok-disabled="okDisabledPrint" @ok="printPage" hide-header-close>
       <div class="pt-2">
           <label for="id-statement" >Номер квитанции</label>
-          <input type="number" class="popap-input" v-model.number="idForPrint">
+          <input type="number" class="popap-input" name="id-statement" v-model.number="idForPrint">
       </div>
       <router-link :to="{path:'/pagePrint', query:dataForPrint}">
         <b-button @click="printPage" variant="primary" :disabled="okDisabledPrint" class="show-button">OK</b-button>
@@ -28,20 +28,20 @@
     </b-modal>
     <b-modal id="add-receipts" title="Добавить новую квитанцию" :ok-disabled='okDisabledAdd' @ok="sendReceipts" hide-header-close>
       <div class="pt-2">
-          <label for="id-statement" >Товар</label>
-        <b-form-select class="popap-input" v-model="selectProduct" :options="avaliableProduct"></b-form-select>
+          <label for="select" >Товар</label>
+        <b-form-select name="select" class="popap-input" v-model="selectProduct" :options="avaliableProduct"></b-form-select>
       </div>
         <div class="pt-2">
-          <label for="id-statement" >Клиент</label>
-          <b-form-select class="popap-input" v-model="selectUser" :options="users"></b-form-select>
+          <label for="users">Клиент</label>
+          <b-form-select name="users" class="popap-input" v-model="selectUser" :options="users"></b-form-select>
       </div>
         <div class="pt-2">
-          <label for="id-statement">Дата отправки</label>
-          <input type="date" class="popap-input" v-model="selectDate">
+          <label for="date-send">Дата отправки</label>
+          <input type="date" name="date-send" class="popap-input" v-model="selectDate">
       </div>
       <div class="pt-2 pb-5">
-          <label for="id-statement">Город отправителя</label>
-          <b-form-select class="popap-input" v-model="selectCity" :options="cities"></b-form-select>
+          <label for="city-get">Город отправителя</label>
+          <b-form-select name="city-get" class="popap-input" v-model="selectCity" :options="cities"></b-form-select>
       </div>
       <p class="issue-page__info-select-product" v-if="selectProduct">
         <span> Товар есть на складе:</span>
